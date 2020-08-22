@@ -1,0 +1,242 @@
+/* Media Queries Large Screens */
+@media (max-width: 1280px) {
+  .banner {
+    padding: 2rem 6rem;
+  }
+
+  /* Header */
+  .header {
+    height: 60vh;
+  }
+
+  .header .header__text-box {
+    padding: 0 10rem;
+  }
+
+  .header .heading-primary-main {
+    font-size: 6rem;
+  }
+
+  .header .heading-primary-sub {
+    font-size: 3rem;
+  }
+
+  /* About */
+  .about {
+    margin: 0 8rem;
+  }
+
+  .about__content .heading-secondary {
+    font-size: 4rem;
+  }
+
+  /* Products */
+  .products .products__items {
+    padding: 0 6rem;
+  }
+
+  .products .products__items-textbox--1,
+  .products .products__items-textbox--2 {
+    flex-basis: 50%;
+  }
+
+  .products .products__items-img--1,
+  .products .products__items-img--2 {
+    flex-basis: 50%;
+  }
+
+  /* Business Bio */
+
+  .business-bio {
+    margin: 0 8rem;
+  }
+
+  /* Booking */
+  .booking .booking__header-content {
+    margin: 0 8rem;
+  }
+
+  /* How To */
+  .how_to {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  .how_to .how_to__items {
+    padding: 0 6rem;
+  }
+
+  .how_to .how_to__items-textbox--1 {
+    flex-basis: 50%;
+  }
+
+  .how_to .how_to__items-img--1 {
+    flex-basis: 50%;
+  }
+
+  /* Service Areas*/
+  .service-areas {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .service-areas__items {
+    padding: 0 8rem;
+  }
+
+  /* Footer */
+  .footer .footer__header-items .footer__header-items-item {
+    padding: 0 4rem;
+  }
+
+  .footer__bottom * > {
+    padding: 0 2rem;
+  }
+
+  .footer__bottom-copyright {
+    margin-left: 6rem;
+  }
+}
+
+/* Media Queries Tablet */
+@media (max-width: 769px) {
+  /* Banner */
+  .banner__items .banner__logo img {
+    width: 15rem;
+  }
+
+  .banner__items .banner__heading {
+    text-align: left;
+  }
+
+  .banner__items .banner__heading .banner__heading-icon .fas {
+    font-size: 2.75rem;
+    margin-right: 1.5rem;
+  }
+
+  .banner__items .banner__heading-primary {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+  /* Products */
+  .products .products-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products .products-container .products__item {
+    display: flex;
+    margin: 2rem auto;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .products .products-container .products__item .products__items-img {
+    width: 70%;
+    margin-bottom: 4rem;
+    flex-direction: column;
+  }
+
+  .products .products-container .products__item:nth-child(even) {
+    flex-direction: column;
+    /* margin-top: 4rem; */
+  }
+
+  /* How It Works */
+  .how_to .how_to-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how_to .how_to-container .how_to__item {
+    display: flex;
+    margin: 2rem auto;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .how_to .how_to-container .how_to__item .how_to__items-img {
+    width: 70%;
+    margin-bottom: 4rem;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .how_to .how_to-container .how_to__item:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  /* Service Areas */
+
+  .service-areas .service-areas-container .service-areas__item {
+    display: flex;
+    margin: 2rem auto;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .service-areas
+    .service-areas-container
+    .service-areas__item
+    .service-areas__items-img {
+    width: 70%;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .service-areas .service-areas-container .service-areas__item:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer .footer__header-items {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer .footer__header-items .footer__header-items-item {
+    padding: 0 6rem;
+    letter-spacing: 1.5px;
+  }
+
+  .footer .footer__header-items .footer__header-items-item:last-child {
+    margin-top: 4rem;
+  }
+}
+
+/* Media Queries Mobile */
+@media (max-width: 500px) {
+  .banner {
+    /* padding: 2rem 6rem; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    height: 40vh;
+  }
+
+  .header .header__text-box {
+    padding: 0 10rem;
+  }
+
+  .header .heading-primary-main {
+    font-size: 6rem;
+  }
+
+  .header .heading-primary-sub {
+    font-size: 3rem;
+  }
+}
