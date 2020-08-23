@@ -28,7 +28,7 @@
 body {
   /* box-sizing: border-box; */
   line-height: 1.2;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -70,7 +70,7 @@ html {
 .btn--tertiary {
   border-radius: 5px;
   display: inline-block;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
   padding: 1.5rem 4rem;
   font-weight: 700;
   color: var(--color-white);
@@ -398,6 +398,77 @@ html {
   transform: translateY(-0.5rem);
   color: var(--primary-color);
   background: var(--color-off-white);
+}
+
+/* Button Cards */
+.button__cards {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.button__cards .button__cards-card {
+  height: 20rem;
+  width: 30rem;
+  border-radius: 5px;
+  background: var(--primary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: var(--color-black);
+  transform-box: all 0.3s;
+}
+
+.button__cards .button__cards-card h3 {
+  letter-spacing: 1px;
+  font-size: var(--default-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.button__cards .button__cards-card a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-black);
+  font-size: 1.4rem;
+}
+
+.button__cards .button__cards-card p {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-black);
+  font-size: 1.4rem;
+}
+
+.btn--primary-large {
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 1.5rem 4rem;
+  height: 15rem;
+  width: 25rem;
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: var(--default-font-size);
+  letter-spacing: 1.2px;
+  box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.15);
+}
+
+.site-links .btn--primary-large {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 1.5rem 4rem;
+  font-weight: 700;
+  font-size: var(--default-font-size);
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.site-links .btn--primary-large:hover {
+  transform: translateY(-0.5rem);
+  color: var(--primary-color);
+  background: var(--color-black);
 }
 
 /* Section About */
@@ -1396,6 +1467,8 @@ html {
     flex-direction: column;
     text-align: center;
     margin-left: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .footer .footer__bottom .footer__bottom-copyright,
@@ -1425,36 +1498,44 @@ html {
 }
 
 .button__cards .button__cards-card {
-  height: 20rem;
-  width: 30rem;
+  height: 25rem;
+  width: 35rem;
   border-radius: 5px;
   background: var(--primary-color);
-  padding: 4rem 1rem;
+  padding: 6rem 1rem;
   text-align: center;
   color: var(--color-black);
   transform-box: all 0.3s;
+  border-top: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  border-left: 1px solid var(--color-black);
 }
 
 .button__cards .button__cards-card h3 {
   letter-spacing: 1px;
-  font-size: var(--default-font-size);
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
 .button__cards .button__cards-card a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-black);
-  font-size: 1.4rem;
+  color: var(--color-white);
+  font-size: var(--default-font-size);
 }
 
 .button__cards .button__cards-card p {
   text-decoration: none;
   cursor: pointer;
   color: var(--color-black);
-  font-size: 1.4rem;
+  font-size: var(--default-font-size);
 }
 
+.button__cards .button__cards-card:not(:first-child) {
+  margin-top: 4rem;
+}
+/* 
 .btn--primary-large {
   border-radius: 5px;
   display: inline-block;
@@ -1467,8 +1548,8 @@ html {
   font-size: var(--default-font-size);
   letter-spacing: 1.2px;
   box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.15);
-}
-
+} */
+/* 
 .site-links .btn--primary-large {
   display: inline-block;
   background-color: var(--primary-color);
@@ -1478,13 +1559,13 @@ html {
   text-align: center;
   transition: all 0.5s;
   z-index: 1;
-}
+} */
 
-.site-links .btn--primary-large:hover {
+/* .site-links .btn--primary-large:hover {
   transform: translateY(-0.5rem);
   color: var(--primary-color);
   background: var(--color-black);
-}
+} */
 
 /* Removal Service */
 .removal__service .primary-text {
