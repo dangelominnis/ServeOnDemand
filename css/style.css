@@ -13,6 +13,23 @@
   --bg-color-light-grey--1: #f3f3f3;
   --bg-color-dark-grey--1: #333;
 
+  --bg-image-gradient-grey: linear-gradient(
+  to right bottom, 
+  #000,
+  #7e7d7d
+  );
+
+  --bg-image-gradient-light-grey: linear-gradient(
+  to right bottom, 
+  #f7f7f7,
+  #fff
+  );
+
+  --bg-image-gradient-orange: linear-gradient(
+  to right bottom, 
+  #e3530d,
+  #f18324
+  );
   --default-font-size: 1.6rem;
 }
 
@@ -78,6 +95,7 @@ html {
   letter-spacing: 1.2px;
   box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.15);
 }
+
 
 .container {
   margin: 0 auto;
@@ -233,11 +251,12 @@ html {
 
 /* Section Banner */
 .banner {
-  background-color: var(--color-black);
+  background: var(--bg-image-gradient-grey);
   position: relative;
   color: var(--color-white);
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 3rem 0 2rem 0;
+  
 }
 
 .banner__items {
@@ -294,7 +313,7 @@ html {
   /* top: 0;
   position: sticky; */
   z-index: 5;
-  background-color: var(--primary-color);
+  background: var(--bg-image-gradient-orange);
   transition: all 0.5s;
 }
 
@@ -344,7 +363,7 @@ html {
   height: 70vh;
   position: relative;
   display: flex;
-  background-image: url(../img/dumpster-container-2.jpg);
+  background-image: url(../img/hero_serve.png);
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -400,6 +419,12 @@ html {
   background: var(--color-off-white);
 }
 
+
+/* Booking */
+.booking {
+  background: var(--bg-image-gradient-orange);
+}
+
 /* Button Cards */
 .button__cards {
   position: relative;
@@ -438,6 +463,22 @@ html {
   cursor: pointer;
   color: var(--color-black);
   font-size: 1.4rem;
+}
+
+.button__cards .button__cards-card .btn--tertiary {
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--color-white);
+  padding: 1.5rem 4rem;
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: var(--default-font-size);
+  letter-spacing: 1.2px;
+  box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.15);
+  border-top: 3px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  border-left: 3px solid var(--primary-color);
 }
 
 .btn--primary-large {
@@ -694,12 +735,20 @@ html {
   font-size: 2.75rem;
 }
 
+.delivery-info {
+  background: var(--bg-image-gradient-light-grey);
+}
+
+.delivery-info .heading-secondary{
+  color: #e3530d;
+}
+
 /* Service Areas */
 .service-areas {
   position: relative;
   display: flex;
   letter-spacing: 1px;
-  color: var(--color-white);
+  background: var(--bg-image-gradient-orange);
 }
 
 .service-areas .service-areas-container {
@@ -769,6 +818,7 @@ html {
 .footer {
   position: relative;
   display: flex;
+  background: var(--bg-image-gradient-grey);
 }
 
 .footer .footer__logo {
@@ -918,8 +968,14 @@ html {
   }
 
   /* Booking */
+  .booking {
+    background: var(--bg-image-gradient-orange);
+  }
+
+
   .booking .booking__header-content {
     padding: 0 4rem;
+    /* background: var(--bg-image-gradient-orange); */
   }
 
   /* How To */
@@ -1358,6 +1414,10 @@ html {
   } */
 
   /* Booking */
+  .booking {
+    background: var(--bg-image-gradient-orange);
+  }
+  
   .booking .booking__header-content {
     margin: 0;
   }
@@ -1500,16 +1560,17 @@ html {
 .button__cards .button__cards-card {
   height: 25rem;
   width: 35rem;
-  border-radius: 5px;
-  background: var(--primary-color);
+  border-radius: 30px;
+  background: var(--bg-image-gradient-light-grey);
   padding: 6rem 1rem;
   text-align: center;
-  color: var(--color-black);
+  /* color: var(--color-black); */
   transform-box: all 0.3s;
-  border-top: 1px solid var(--color-black);
-  border-right: 1px solid var(--color-black);
-  border-bottom: 1px solid var(--color-black);
-  border-left: 1px solid var(--color-black);
+  border-top: 3px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+  margin-top: 4rem;
 }
 
 .button__cards .button__cards-card h3 {
@@ -1532,9 +1593,10 @@ html {
   font-size: var(--default-font-size);
 }
 
-.button__cards .button__cards-card:not(:first-child) {
+/* .button__cards .button__cards-card:not(:first-child) {
   margin-top: 4rem;
-}
+} */
+
 /* 
 .btn--primary-large {
   border-radius: 5px;
@@ -1672,4 +1734,119 @@ html {
 }
 .section-contact .contact__form-grp .recap {
   margin: 0 0 4rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact 2 */
+
+.section-contact {
+  position: relative;
+  padding: 8rem 0;
+  background: var(--bg-image-gradient-light-grey);
+}
+
+  .section-contact .heading-secondary {
+    color: #e3530d;
+  }
+  .section-contact .contact__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem; }
+  .section-contact .contact__cards-card {
+    background-color: #fff;
+    text-align: center;
+    flex-basis: 30rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    height: 22rem;
+    border-radius: 1.2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 3rem;
+    transition: ease-in 0.3s;
+    border-bottom: 3px solid #e3530d; }
+    .section-contact .contact__cards-card:hover {
+      transform: scale(1.1); }
+      .section-contact .contact__cards-card .fas:hover {
+        color: #000;
+      }
+    .section-contact .contact__cards-card .fas {
+      padding: 2rem 0;
+      color: #e3530d; }
+    .section-contact .contact__cards-card h3 {
+      font-size: 2rem;
+      color: #000;
+      letter-spacing: 1px;
+      padding-bottom: 2rem;
+      text-transform: uppercase; }
+    .section-contact .contact__cards-card p {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #e3530d;
+      letter-spacing: 1px;
+      padding-bottom: 2rem; }
+  .section-contact .contact__form-grp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    justify-content: left;
+    align-items: left; }
+    .section-contact .contact__form-grp ::placeholder {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #e3530d; }
+    .section-contact .contact__form-grp label {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #000;
+      margin-bottom: 0.5rem;
+      align-self: center; }
+    .section-contact .contact__form-grp input[type="text"] {
+      height: 4.5rem;
+      width: 100%;
+      flex: 1;
+      border: 1px solid #000;
+      border-radius: 0.5rem;
+      font-size: 1.6rem;
+      font-family: inherit;
+      outline: none;
+      padding: 0 1rem;
+      margin-bottom: 3rem; }
+      .section-contact .contact__form-grp input[type="text"]:focus {
+        border: 1px solid #000; }
+    .section-contact .contact__form-grp textarea {
+      height: 13.5rem;
+      width: 100%;
+      flex: 1;
+      font-size: 1.6rem;
+      font-family: inherit;
+      border: 1px solid #000;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      outline: none;
+      margin-bottom: 4rem; }
+      .section-contact .contact__form-grp textarea:focus {
+        border: 1px solid #000; }
+    .section-contact .contact__form-grp .recap {
+      margin: 0 0 4rem 0; }
+.fa-briefcase:before {
+    content: "\f0b1";
 }

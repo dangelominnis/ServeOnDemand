@@ -1,20 +1,37 @@
 /* Variables */
 :root {
-    --primary-color: #e3530d;
-    --secondary-color: ;
-    --max-width: 1100px;
-  
-    --color-black: #000;
-    --color-white: #fff;
-    --color-off-white: #f7f7f7;
-    --color-grey-medium: #7e7d7d;
-    --color-dark-gray--1: #333;
-  
-    --bg-color-light-grey--1: #f3f3f3;
-    --bg-color-dark-grey--1: #333;
-  
-    --default-font-size: 1.6rem;
-  }
+  --primary-color: #e3530d;
+  --secondary-color: ;
+  --max-width: 1100px;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-off-white: #f7f7f7;
+  --color-grey-medium: #7e7d7d;
+  --color-dark-gray--1: #333;
+
+  --bg-color-light-grey--1: #f3f3f3;
+  --bg-color-dark-grey--1: #333;
+
+  --bg-image-gradient-grey: linear-gradient(
+  to right bottom, 
+  #000,
+  #7e7d7d
+  );
+
+  --bg-image-gradient-light-grey: linear-gradient(
+  to right bottom, 
+  #f7f7f7,
+  #fff
+  );
+
+  --bg-image-gradient-orange: linear-gradient(
+  to right bottom, 
+  #e3530d,
+  #f18324
+  );
+  --default-font-size: 1.6rem;
+}
   
   /* CSS Reset  */
   *,
@@ -220,11 +237,12 @@
   
   /* Section Banner */
   .banner {
-    background-color: var(--color-black);
+    background: var(--bg-image-gradient-grey);
     position: relative;
     color: var(--color-white);
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 3rem 0 2rem 0;
+    
   }
   
   .banner__items {

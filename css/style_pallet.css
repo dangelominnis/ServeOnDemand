@@ -13,6 +13,23 @@
   --bg-color-light-grey--1: #f3f3f3;
   --bg-color-dark-grey--1: #333;
 
+  --bg-image-gradient-grey: linear-gradient(
+  to right bottom, 
+  #000,
+  #7e7d7d
+  );
+
+  --bg-image-gradient-light-grey: linear-gradient(
+  to right bottom, 
+  #f7f7f7,
+  #fff
+  );
+
+  --bg-image-gradient-orange: linear-gradient(
+  to right bottom, 
+  #e3530d,
+  #f18324
+  );
   --default-font-size: 1.6rem;
 }
 
@@ -220,11 +237,12 @@ html {
 
 /* Section Banner */
 .banner {
-  background-color: var(--color-black);
+  background: var(--bg-image-gradient-grey);
   position: relative;
   color: var(--color-white);
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 3rem 0 2rem 0;
+  
 }
 
 .banner__items {
@@ -331,7 +349,7 @@ html {
   height: 70vh;
   position: relative;
   display: flex;
-  background-image: url(../img/pallets.jpg);
+  background-image: url(../img/hero_pallet.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -1474,6 +1492,25 @@ html {
   font-size: 1.7rem;
 }
 
+/* Removal Service 2 */
+.removal__service-2 {
+  background: var(--bg-image-gradient-orange);
+}
+
+.removal__service-2 .heading-secondary {
+  color: #fff;
+}
+
+.removal__service-2 .primary-text {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.removal__service-2 p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
 /* Pallet Dropoff  */
 .pallet-dropoff .primary-text {
   font-size: 2.5rem;
@@ -1492,8 +1529,21 @@ html {
   font-size: 1.7rem;
 }
 
+.purchasing {
+  background: var(--bg-image-gradient-orange);
+}
+
 .purchasing .heading-secondary,
 .purchasing .primary-text {
+  color: var(--color-white);
+}
+
+.purchasing-2 {
+  background: var(--bg-image-gradient-orange);
+}
+
+.purchasing-2 .heading-secondary,
+.purchasing-2 .primary-text {
   color: var(--color-white);
 }
 

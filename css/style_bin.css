@@ -13,6 +13,23 @@
   --bg-color-light-grey--1: #f3f3f3;
   --bg-color-dark-grey--1: #333;
 
+  --bg-image-gradient-grey: linear-gradient(
+  to right bottom, 
+  #000,
+  #7e7d7d
+  );
+
+  --bg-image-gradient-light-grey: linear-gradient(
+  to right bottom, 
+  #f7f7f7,
+  #fff
+  );
+
+  --bg-image-gradient-orange: linear-gradient(
+  to right bottom, 
+  #e3530d,
+  #f18324
+  );
   --default-font-size: 1.6rem;
 }
 
@@ -221,11 +238,12 @@ html {
 
 /* Section Banner */
 .banner {
-  background-color: var(--color-black);
+  background: var(--bg-image-gradient-grey);
   position: relative;
   color: var(--color-white);
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 3rem 0 2rem 0;
+  
 }
 
 .banner__items {
@@ -332,7 +350,7 @@ html {
   height: 70vh;
   position: relative;
   display: flex;
-  background-image: url(../img/dumpster-1.jpg);
+  background-image: url(../img/hero_bin.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -1467,6 +1485,10 @@ html {
 }
 
 /* Removal Service */
+.removal__service {
+  background: var(--bg-image-gradient-orange);
+}
+
 .removal__service .primary-text {
   font-size: 2.5rem;
 }
