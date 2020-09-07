@@ -791,6 +791,7 @@ html {
   text-decoration: none;
   color: var(--color-white);
   transition: all 0.5s;
+  padding: 0rem 2rem;
 }
 
 .footer__bottom .footer__bottom-terms-cond a:hover,

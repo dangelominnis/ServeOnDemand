@@ -437,8 +437,92 @@ html {
   color: var(--color-black);
 }
 
+
 /* Products */
 .products {
+  position: relative;
+  display: flex;
+}
+
+.products .btn--primary {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 1.5rem 4rem;
+  font-weight: 700;
+  font-size: var(--default-font-size);
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.products .btn--primary:hover {
+  transform: translateY(-0.5rem);
+  color: var(--primary-color);
+  background: var(--color-black);
+}
+
+.products .products__items {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products .products__items .products__items-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products .products__items .products__items-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.products .products__items .products__items-item {
+  margin-top: 8rem;
+}
+
+.products .products__items-textbox--1,
+.products .products__items-textbox--2 {
+  flex-basis: 60%;
+}
+
+.products .products__items-textbox--1 {
+  padding-left: 6rem;
+}
+
+.products .products__items-textbox--2 {
+  padding-right: 6rem;
+}
+
+.products .products__items-img--1,
+.products .products__items-img--2 {
+  flex-basis: 40%;
+}
+
+.products .products__items-img--1 {
+  background: url("/img/dumpster-1.jpg") no-repeat center center/cover;
+}
+
+.products .products__items-img--2 {
+  background: url("/img/dumpster-1.jpg") no-repeat center center/cover;
+}
+
+.products .products__items .products__items-measurements li {
+  list-style-position: inside;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.products .products__items .btn {
+  position: relative;
+  transition: all 0.2s;
+}
+
+
+
+/* Products */
+/* .products {
   position: relative;
   display: flex;
   letter-spacing: 1px;
@@ -450,9 +534,9 @@ html {
 }
 
 .products .products-container .products__item {
-  display: flex;
+  display: flex; */
   /* margin: 2rem auto; */
-  flex-direction: row;
+  /* flex-direction: row;
 }
 
 .products .products-container .products__item .products__items-textbox {
@@ -493,7 +577,7 @@ html {
   transform: translateY(-0.5rem);
   color: var(--primary-color);
   background: var(--color-black);
-}
+} */
 
 /* How to */
 .how_to {
@@ -792,6 +876,7 @@ html {
   text-decoration: none;
   color: var(--color-white);
   transition: all 0.5s;
+  padding: 0rem 2rem;
 }
 
 .footer__bottom .footer__bottom-terms-cond a:hover,
@@ -959,10 +1044,27 @@ html {
     flex-direction: column;
   }
 
-  .products .products-container .products__item .products__items-img {
+  /* .products .products-container .products__item .products__items-img {
     width: 70%;
     margin-bottom: 4rem;
     flex-direction: column;
+  } */
+
+  .products .products__items-img--1,
+  .products .products__items-img--2 {
+    flex-basis: 40%;
+  }
+
+  .products__items-img--1 {
+background: url("./img/dumpster-1.jpg") no-repeat center center/cover;
+  }
+  
+  .products .products__items-img--1 {
+    background: url("/img/dumpster-1.jpg") no-repeat center center/cover;
+  }
+  
+  .products .products__items-img--2 {
+    background: url("/img/dumpster-1.jpg") no-repeat center center/cover;
   }
 
   .products .products-container .products__item:not(:first-child) {
@@ -1489,12 +1591,18 @@ html {
   background: var(--bg-image-gradient-orange);
 }
 
+.removal__service h2 {
+  color: #fff;
+}
+
 .removal__service .primary-text {
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .removal__service p {
   font-size: 1.7rem;
+  color: #fff;
 }
 
 /* Pallet Dropoff  */
@@ -1594,3 +1702,6 @@ html {
 .section-contact .contact__form-grp .recap {
   margin: 0 0 4rem 0;
 }
+
+
+

@@ -137,6 +137,10 @@ html {
   color: var(--color-dark-gray--1);
 }
 
+.u-bg-white {
+  color: white;
+}
+
 .u-bg-light-grey--1 {
   background-color: var(--bg-color-light-grey--1);
 }
@@ -907,6 +911,7 @@ html {
   text-decoration: none;
   color: var(--color-white);
   transition: all 0.5s;
+  padding: 0rem 2rem;
 }
 
 .footer__bottom .footer__bottom-terms-cond a:hover,
