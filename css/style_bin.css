@@ -13,22 +13,18 @@
   --bg-color-light-grey--1: #f3f3f3;
   --bg-color-dark-grey--1: #333;
 
-  --bg-image-gradient-grey: linear-gradient(
-  to right bottom, 
-  #000,
-  #7e7d7d
-  );
+  --bg-image-gradient-grey: linear-gradient(to right bottom, #000, #7e7d7d);
 
   --bg-image-gradient-light-grey: linear-gradient(
-  to right bottom, 
-  #f7f7f7,
-  #fff
+    to right bottom,
+    #f7f7f7,
+    #fff
   );
 
   --bg-image-gradient-orange: linear-gradient(
-  to right bottom, 
-  #e3530d,
-  #f18324
+    to right bottom,
+    #e3530d,
+    #f18324
   );
   --default-font-size: 1.6rem;
 }
@@ -243,7 +239,6 @@ html {
   color: var(--color-white);
   margin: 0 auto;
   padding: 3rem 0 2rem 0;
-  
 }
 
 .banner__items {
@@ -437,7 +432,6 @@ html {
   color: var(--color-black);
 }
 
-
 /* Products */
 .products {
   position: relative;
@@ -519,7 +513,43 @@ html {
   transition: all 0.2s;
 }
 
+.products-2__items {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.products-2__items .products-2__items-item {
+  display: flex;
+}
+
+.products-2__items .products-2__items-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.products-2__items .products-2__items-item-text,
+.products-2__items .products-2__items-item-img {
+  flex: 1;
+  padding: 2rem 4rem;
+}
+
+.products-2__items .products-2__items-item .products-2__items-item-img img {
+  width: 100%;
+}
+
+.products-2__items .products-2__items-item-text li {
+  list-style-position: inside;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* .products-2__items .products-2__items-item .products-2__items-item-img {
+  background: url("../img/dumpster-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+} */
 
 /* Products */
 /* .products {
@@ -535,8 +565,8 @@ html {
 
 .products .products-container .products__item {
   display: flex; */
-  /* margin: 2rem auto; */
-  /* flex-direction: row;
+/* margin: 2rem auto; */
+/* flex-direction: row;
 }
 
 .products .products-container .products__item .products__items-textbox {
@@ -1044,6 +1074,14 @@ html {
     flex-direction: column;
   }
 
+  .products-2__items .products-2__items-item {
+    flex-direction: column;
+  }
+
+  .products-2__items .products-2__items-item:nth-child(even) {
+    flex-direction: column;
+  }
+
   /* .products .products-container .products__item .products__items-img {
     width: 70%;
     margin-bottom: 4rem;
@@ -1056,13 +1094,13 @@ html {
   }
 
   .products__items-img--1 {
-background: url("./img/dumpster-1.jpg") no-repeat center center/cover;
+    background: url("./img/dumpster-1.jpg") no-repeat center center/cover;
   }
-  
+
   .products .products__items-img--1 {
     background: url("/img/dumpster-1.jpg") no-repeat center center/cover;
   }
-  
+
   .products .products__items-img--2 {
     background: url("/img/dumpster-1.jpg") no-repeat center center/cover;
   }
@@ -1702,6 +1740,3 @@ background: url("./img/dumpster-1.jpg") no-repeat center center/cover;
 .section-contact .contact__form-grp .recap {
   margin: 0 0 4rem 0;
 }
-
-
-

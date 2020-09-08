@@ -367,8 +367,8 @@ html {
   height: 70vh;
   position: relative;
   display: flex;
-  background-image: url(../img/hero_serve.png);
-  background-size: cover;
+  background-image: url(../img/hero_serve1.png);
+  background-size: center;
   background-position: center;
   background-repeat: none;
   justify-content: center;
