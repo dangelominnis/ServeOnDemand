@@ -342,7 +342,7 @@ html {
 
 /* Header */
 .header {
-  height: 70vh;
+  height: 80vh;
   position: relative;
   display: flex;
   background-image: url(../img/hero_bin.jpg);
@@ -365,7 +365,7 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
 }
 
 .header .heading-primary-main {
@@ -1385,7 +1385,7 @@ html {
 
   /* Header */
   .header {
-    height: 85vh;
+    height: 20vh;
   }
 
   .header .header__text-box {
@@ -1626,21 +1626,69 @@ html {
 
 /* Removal Service */
 .removal__service {
-  background: var(--bg-image-gradient-orange);
+  background: var(--bg-image-gradient-light-grey);
 }
 
 .removal__service h2 {
-  color: #fff;
+  color: #000;
 }
 
 .removal__service .primary-text {
   font-size: 2.5rem;
-  color: #fff;
+  color: #000;
 }
 
 .removal__service p {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.removal__service .btn--primary {
+  margin: 2rem;
+}
+
+/* Removal Service 2 */
+.removal__service-2 {
+  background: var(--bg-image-gradient-orange);
+  position: relative;
+  display: flex;
+}
+
+.removal__service-2 .heading-secondary {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.removal__service-2 .primary-text {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.removal__service-2 p {
   font-size: 1.7rem;
   color: #fff;
+}
+
+.removal__service-2 ol {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: left;
+  margin: 0rem 6rem;
+}
+
+.removal__service-2 ol li {
+padding-bottom: 4rem;
+}
+
+.removal__service-2 .btn--primary {
+ background-color: #fff; 
+ color: var(--primary-color);
+ transition: all 0.5s;
+}
+
+.removal__service-2 .btn--primary:hover {
+ background-color: var(--primary-color); 
+ color: #fff;
 }
 
 /* Pallet Dropoff  */

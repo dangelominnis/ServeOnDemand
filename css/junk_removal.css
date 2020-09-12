@@ -346,7 +346,7 @@ html {
 
 /* Header */
 .header {
-  height: 70vh;
+  height: 80vh;
   position: relative;
   display: flex;
   background-image: url(../img/hero_junk_removal.jpg);
@@ -369,7 +369,7 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
 }
 
 .header .heading-primary-main {
@@ -1245,7 +1245,7 @@ html {
 
   /* Header */
   .header {
-    height: 85vh;
+    height: 20vh;
   }
 
   .header .header__text-box {
@@ -1485,12 +1485,20 @@ html {
 }
 
 /* Removal Service */
+.removal__service {
+  background: var(--bg-image-gradient-light-grey);
+}
+
+.removal__service .btn--primary {
+  margin: 2rem;
+}
+
 .removal__service .primary-text {
   font-size: 2.5rem;
 }
 
 .removal__service p {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
 }
 
 /* Removal Service 2 */
@@ -1530,13 +1538,28 @@ html {
   font-size: 1.7rem;
 }
 
+
 .purchasing {
   background: var(--bg-image-gradient-orange);
+  display: flex;
+  position: relative;
+}
+
+.purchasing ul {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .purchasing .heading-secondary,
 .purchasing .primary-text {
   color: var(--color-white);
+  margin-bottom: 4rem;
 }
 
 .purchasing-2 {
