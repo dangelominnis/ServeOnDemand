@@ -806,6 +806,70 @@ html {
     padding: 2rem 6rem;
   }
 
+  .nav__ul {
+    display: none;
+    position: relative;
+  }
+
+  .nav__mobile .nav__mobile-ul {
+    display: none;
+  }
+
+  .nav__mobile .nav__mobile-ul.active {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+    justify-content: flex-end;
+    padding-right: 4rem;
+  }
+
+  .nav .hamburger {
+    display: flex;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--color-white);
+  }
+
+  .nav .hamburger .hamburger-bars {
+    align-self: right;
+  }
+
+  .nav__mobile {
+    background: var(--color-black);
+    display: block;
+  }
+
+  .nav__mobile ul {
+    position: relative;
+  }
+
+  .nav__mobile .nav__mobile-ul li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    font-size: var(--default-font-size);
+  }
+
+  .nav__mobile .nav__mobile-ul a,
+  .nav__mobile .nav__mobile-ul i {
+    cursor: pointer;
+    color: var(--color-white);
+    font-weight: 600;
+  }
+
+  .nav__mobile .nav__mobile-ul i {
+    margin: 1rem;
+  }
+
+  .nav__mobile ul li:not(:last-child) {
+    border-bottom: 1px solid var(--color-white);
+    width: 100%;
+  }
+
   /* Header */
   .header {
     height: 60vh;

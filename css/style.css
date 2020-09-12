@@ -429,6 +429,12 @@ html {
   background: var(--bg-image-gradient-orange);
 }
 
+.booking h3 {
+  font-size: 2rem;
+  color: #fff;
+
+}
+
 /* Button Cards */
 .button__cards {
   position: relative;
@@ -924,6 +930,70 @@ html {
 @media (max-width: 1280px) {
   .banner {
     padding: 2rem 6rem;
+  }
+
+  .nav__ul {
+    display: none;
+    position: relative;
+  }
+
+  .nav__mobile .nav__mobile-ul {
+    display: none;
+  }
+
+  .nav__mobile .nav__mobile-ul.active {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+    justify-content: flex-end;
+    padding-right: 4rem;
+  }
+
+  .nav .hamburger {
+    display: flex;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--color-white);
+  }
+
+  .nav .hamburger .hamburger-bars {
+    align-self: right;
+  }
+
+  .nav__mobile {
+    background: var(--color-black);
+    display: block;
+  }
+
+  .nav__mobile ul {
+    position: relative;
+  }
+
+  .nav__mobile .nav__mobile-ul li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    font-size: var(--default-font-size);
+  }
+
+  .nav__mobile .nav__mobile-ul a,
+  .nav__mobile .nav__mobile-ul i {
+    cursor: pointer;
+    color: var(--color-white);
+    font-weight: 600;
+  }
+
+  .nav__mobile .nav__mobile-ul i {
+    margin: 1rem;
+  }
+
+  .nav__mobile ul li:not(:last-child) {
+    border-bottom: 1px solid var(--color-white);
+    width: 100%;
   }
 
   /* Header */
@@ -1771,7 +1841,7 @@ html {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4rem;
-    margin-bottom: 8rem; }
+    margin-bottom: 2rem; }
   .section-contact .contact__cards-card {
     background-color: #fff;
     text-align: center;
@@ -1797,7 +1867,8 @@ html {
       color: #000;
       letter-spacing: 1px;
       padding-bottom: 2rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+    transform: translateY(2.5rem); }
     .section-contact .contact__cards-card p {
       font-size: 1.7rem;
       font-weight: 700;
