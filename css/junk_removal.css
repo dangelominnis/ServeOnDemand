@@ -346,10 +346,10 @@ html {
 
 /* Header */
 .header {
-  height: 80vh;
+  height: 70vh;
   position: relative;
   display: flex;
-  background-image: url(../img/hero_junk_removal.jpg);
+  background-image: url(../img/hero_junk_removal_2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -1565,6 +1565,11 @@ html {
   font-size: 2.5rem;
 }
 
+.removal__service h3 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
 /* Removal Service 2 */
 .removal__service-2 {
   background: var(--bg-image-gradient-orange);
@@ -1618,6 +1623,22 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 4rem;
+}
+
+.purchasing p {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+} 
+
+.purchasing h3 {
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .purchasing .heading-secondary,

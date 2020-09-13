@@ -120,6 +120,14 @@ html {
   color: var(--color-dark-gray--1);
 }
 
+.u-text-white {
+  color: #fff;
+}
+
+.u-text-black {
+  color: #000
+}
+
 .u-bg-light-grey--1 {
   background-color: var(--bg-color-light-grey--1);
 }
@@ -1697,6 +1705,12 @@ html {
   color: #000;
 }
 
+.removal__service h3 {
+  color: #000;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
+
 .removal__service .primary-text {
   font-size: 2.5rem;
   color: #000;
@@ -1720,11 +1734,12 @@ html {
 
 .removal__service-2 h3 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding-top: 2rem;
 }
 
 .removal__service-2 .heading-secondary {
-  color: #fff;
+  /* color: #000; */
   margin-bottom: 4rem;
 }
 
