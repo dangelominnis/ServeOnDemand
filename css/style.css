@@ -1869,6 +1869,10 @@ html {
       padding-bottom: 2rem;
       text-transform: uppercase;
     transform: translateY(2.5rem); }
+    .section-contact .contact__cards-card a {
+      color: #000;
+      text-decoration: none;
+    }
     .section-contact .contact__cards-card p {
       font-size: 1.7rem;
       font-weight: 700;

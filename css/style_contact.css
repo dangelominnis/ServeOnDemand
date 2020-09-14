@@ -367,7 +367,7 @@
     height: 70vh;
     position: relative;
     display: flex;
-    background-image: url(../img/employment_hero.jpg);
+    background-image: url(../img/hero_serve.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1827,7 +1827,7 @@
   
   .section-contact {
     position: relative;
-    padding: 4rem 0;
+    padding: 8rem 0;
     background: var(--bg-image-gradient-light-grey);
   }
   
@@ -1841,14 +1841,14 @@
       justify-content: space-evenly;
       align-items: center;
       margin-top: 4rem;
-      margin-bottom: 4rem; }
+      margin-bottom: 2rem; }
     .section-contact .contact__cards-card {
       background-color: #fff;
       text-align: center;
       flex-basis: 30rem;
       box-sizing: border-box;
       padding: 2rem;
-      height: 30rem;
+      height: 22rem;
       border-radius: 1.2rem;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       margin-top: 3rem;
@@ -1863,22 +1863,26 @@
         padding: 2rem 0;
         color: #e3530d; }
       .section-contact .contact__cards-card h3 {
-        font-size: 4rem;
+        font-size: 2rem;
         color: #000;
         letter-spacing: 1px;
         padding-bottom: 2rem;
         text-transform: uppercase;
       transform: translateY(1.5rem); }
+      .section-contact .contact__cards-card h3 a {
+          color: #000;
+          text-decoration: none;
+      }
+      .section-contact .contact__cards-card p a {
+        color: #e3530d;
+        text-decoration: none;
+    }
       .section-contact .contact__cards-card p {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         font-weight: 700;
         color: #e3530d;
         letter-spacing: 1px;
         padding-bottom: 2rem; }
-      .section-contact .contact__cards-card a {
-        color: #000;
-        text-decoration: none;
-      }
     .section-contact .contact__form-grp {
       display: flex;
       flex-direction: column;

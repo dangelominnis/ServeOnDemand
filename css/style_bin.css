@@ -350,7 +350,7 @@ html {
 
 /* Header */
 .header {
-  height: 80vh;
+  height: 70vh;
   position: relative;
   display: flex;
   background-image: url(../img/hero_bin.jpg);
