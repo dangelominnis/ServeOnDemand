@@ -40,6 +40,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #e3530d;
   }
   
   body {
@@ -1595,12 +1596,12 @@
   }
   
   .purchasing {
-    background: var(--bg-image-gradient-orange);
+    background: var(--bg-color-light-grey--1);
   }
   
   .purchasing .heading-secondary,
   .purchasing .primary-text {
-    color: var(--color-white);
+    color: var(--color-black);
   }
   
   .purchasing-2 {
