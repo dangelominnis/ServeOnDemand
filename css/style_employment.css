@@ -317,7 +317,7 @@
     /* top: 0;
     position: sticky; */
     z-index: 5;
-    background: var(--bg-image-gradient-orange);
+    background: var(--bg-color-light-grey--1);
     transition: all 0.5s;
   }
   
@@ -337,7 +337,7 @@
     font-size: var(--default-font-size);
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--color-white);
+    color: var(--primary-color);
   }
   
   .nav__ul .nav__ul-li {
@@ -349,7 +349,7 @@
   .nav__ul a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--color-white);
+    color: var(--primary-color);
     transition: all 0.7s;
   }
   
@@ -1877,6 +1877,10 @@
         padding-bottom: 2rem; }
       .section-contact .contact__cards-card a {
         color: #000;
+        text-decoration: none;
+      }
+      .section-contact .contact__cards-card p a {
+        color: #e3530d;
         text-decoration: none;
       }
     .section-contact .contact__form-grp {

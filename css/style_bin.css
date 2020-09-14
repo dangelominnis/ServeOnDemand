@@ -303,7 +303,7 @@ html {
   /* top: 0;
     position: sticky; */
   z-index: 5;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color-light-grey--1);
   transition: all 0.5s;
 }
 
@@ -323,7 +323,7 @@ html {
   font-size: var(--default-font-size);
   font-weight: 600;
   letter-spacing: 1px;
-  color: var(--color-white);
+  color: var(--primary-color);
 }
 
 .nav__ul .nav__ul-li {
@@ -335,7 +335,7 @@ html {
 .nav__ul a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-white);
+  color: var(--primary-color);
   transition: all 0.7s;
 }
 
