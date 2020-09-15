@@ -1736,12 +1736,17 @@ html {
 .removal__service-2 h3 {
   color: #fff;
   font-size: 2.5rem;
-  padding-top: 2rem;
+  padding-top: 2rem 2rem;
 }
 
 .removal__service-2 .heading-secondary {
-  /* color: #000; */
+  color: #fff;
   margin-bottom: 4rem;
+}
+
+.removal__service-2 h3 {
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .removal__service-2 .primary-text {
@@ -1763,6 +1768,7 @@ html {
 
 .removal__service-2 ol li {
 padding-bottom: 4rem;
+color: #fff;
 }
 
 .removal__service-2 .btn--primary {

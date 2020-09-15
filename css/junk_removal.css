@@ -1562,8 +1562,13 @@ html {
   font-size: 2.5rem;
 }
 
+.removal__service .heading-secondary {
+  color: #000;
+}
+
 .removal__service p {
   font-size: 2.5rem;
+  color: #000;
 }
 
 .removal__service h3 {
